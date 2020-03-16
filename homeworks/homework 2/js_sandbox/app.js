@@ -16,11 +16,11 @@ var result = [];
 for(let i=0; i<values.length; i++){
     var row = {};
     for(let j=0; j<attrs.length; j++){
-        for(let k=0; k<attrs[i].length; k++){
-            row[attrs[j]] = values[i][k]; 
-        }
+        row[attrs[j]] = values[i][j];
+        
     }
     result.push(row);
+    
 }
 
 console.log(result)
